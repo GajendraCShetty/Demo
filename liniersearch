@@ -1,0 +1,16 @@
+def lini(a,key):
+    n=len(a)
+    for i in range(n):
+        if(a[i]==key):
+            print("element found at",i)
+            return
+    print("element not found")
+#calling program
+n=int(input('enter the limit of array:'))
+a=list()
+for g in range(n):
+    s=int(input('enter the element to array:'))
+    a.append(s)
+print("Array:",a)
+key=int(input('enter the searching element:'))
+lini(a,key)
